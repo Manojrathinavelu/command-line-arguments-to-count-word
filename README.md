@@ -30,17 +30,20 @@ display the value using print() function
 Developed by:Manoj karthik R
 Register number: 22003728
 import sys
-fp = open(sys.argv[1]) 
-data=fp.read()
-word=data.split()
-print("No of words",len(word))
-TEXT FILE:
-Hello Good Morning 
-Be a Good Daypython 
-```
+count = {}
+with open(sys.argv[1], 'r') as f:
+    for line in f:
+        for word in line.split():
+            if word not in count:
+                count[word] = 1
+            else:
+                count[word] += 1
+print(count)
+f.close()
 ### OUTPUT:
 
-![image](https://user-images.githubusercontent.com/119560395/214846778-7c25ca70-d4d2-430d-9839-d6690a060e82.png)
+![Screenshot_20230128_073810](https://user-images.githubusercontent.com/119560395/215270915-6e49e593-6a86-4754-8309-d165590e28e2.png)
+
 
 
 
