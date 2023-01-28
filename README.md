@@ -40,6 +40,7 @@ with open(sys.argv[1], 'r') as f:
                 count[word] += 1
 print(count)
 f.close()
+```
 ### OUTPUT:
 
 ![Screenshot_20230128_073810](https://user-images.githubusercontent.com/119560395/215270915-6e49e593-6a86-4754-8309-d165590e28e2.png)
